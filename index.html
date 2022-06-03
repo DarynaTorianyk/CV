@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
     <title>Daryna CV</title>
-</head>
-<body>
-<table cellspacing="15">
-    <tr>
-        <td>
-            <img src="avatar.jpg" width="200" alt="it's my photo"/>
-        </td>
-        <td>
-            <h1>Daryna Torianyk</h1>
-            <p><em>I'm a beginner in <strong>HTML world</strong></em></p>
-            <p>I like travel, explore new things and I'd like to be developer</p> 
-        </td>
-    </tr>
-</table>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    < class="container">
+      <div class="info">
+        <img src="avatar.jpg" alt="it's my photo" class="avatar" />
+        <h1>Daryna Torianyk</h1>
+        <p>I'm a beginner in <strong>HTML world</strong></p>
+        <p>I like travel, explore new things and I'd like to be developer</p>
 
-   <hr>
+        <h4>My social networks</h4>
 
-   <h2>My social networks</h2>
-   <ul type="circle">
-     <li><a href="https://instagram.com/torianyk_daryna" target="_blank">Instagram</a></li> 
-     <li><a href="https://t.me/torianyk_daryna" target="_blank">Telegram</a></li> 
-   </ul>
+        <a href="https://instagram.com/torianyk_daryna" target="_blank"
+          >Instagram</a
+        >
 
-<hr>
+        <a href="https://t.me/torianyk_daryna" target="_blank">Telegram</a>
+      </div>
 
-   <h2> My hobby</h2>
-   <ol type="a">
-       <li>English</li>
-       <li>Sport</li>
-       <li>Travel</li>
-       <li>Law</li>
-   </ol>
+      <div class="card bg-yellow">
+        <h2>My hobby</h2>
+        <ol type="a">
+          <li>English</li>
+          <li>Sport</li>
+          <li>Travel</li>
+          <li>Law</li>
+        </ol>
+      </div>
 
-<hr>
-
-   <h2>Work experience</h2>
-   <table>
-        <tr>
-            <th>Company</th> 
-            <th>Job title</th> 
-            <th>Years of work</th> 
-        </tr>
-        <tr>
+      <div class="card bg-green">
+        <h2>Work experience</h2>
+        <table>
+          <tr>
+            <th>Company</th>
+            <th>Job title</th>
+            <th>Years of work</th>
+          </tr>
+          <tr>
             <td>Association of lawyers</td>
             <td>Legal assistant</td>
             <td>2020-2022</td>
-        </tr>
-        <tr>
-         <td>Association of lawyers</td>
-         <td>Legal assistant</td>
-         <td>2020-2022</td>
-     </tr>  
-   </table>
+          </tr>
+          <tr>
+            <td>Association of lawyers</td>
+            <td>Legal assistant</td>
+            <td>2020-2022</td>
+          </tr>
+        </table>
+      </div>
 
-   <hr>
+      <div class="card bg-red">
+        <h2>Youtube Course</h2>
+        <a href="youtube.html">To look list</a>
+        <hr />
+      </div>
+      
 
-   <h2> Youtube Course</h2>
-   <a href="youtube.html">To look list</a>
+      <h2>Contact with me</h2>
 
-<hr>
+      <form action="/">
+        <label for="name">Your name:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Start to write your name..."
+        />
 
-<h2>Contact with me</h2>
+        <br />
 
-<form action="/">
-    <label for="name">Your name:</label>
-   <input type="text" id="name" placeholder="Start to write your name..."> 
+        <label for="email">Your email:</label>
+        <input
+          type="text"
+          id="email"
+          placeholder="Start to write your email..."
+        />
 
-   <br>
+        <br />
 
-   <label for="email">Your email:</label>
-   <input type="text" id="email" placeholder="Start to write your email...">
+        <label for="text">Your message:</label>
+        <br />
+        <textarea id="text" rows="2" cols="20"></textarea>
 
-   <br>
+        <input type="submit" value="Contact!" />
+      </form>
+    </div>
 
-   <label for="text">Your message:</label>
-   <br>
-   <textarea id="text" rows="2" cols="20"></textarea>
-
-   <input type="submit" value="Contact!">
-</form>
-
-</body>
+    <div style="margin-bottom: 500px"></div>
+  </body>
 </html>
